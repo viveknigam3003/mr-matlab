@@ -18,3 +18,15 @@ prompt = 'What is the original value? ';
 x = input(prompt)
 y = x*10
 ```
+5. __disp(X)__ - displays the value of variable X without printing the variable name. Another way to display a variable is to type its name, which displays a leading “X =” before the value.
+
+```MATLAB
+A = [15 150];
+S = 'Hello World.';
+```
+To display Matrix with column names
+
+```MATLAB
+X = rand(5,3);
+disp('     Corn      Oats      Hay')
+```
