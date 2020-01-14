@@ -1,0 +1,5 @@
+n = input('Enter value of n = ');
+m = input('Enter value of m = ');
+ncm = factorial(n)/(factorial(m)*(factorial(n-m)));
+f
+fprintf('value of nCm: %d\n',ncm);
