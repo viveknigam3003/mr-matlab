@@ -1,6 +1,6 @@
 # MATLAB Guide
 
-## Commands
+## Basic Commands
 * `clc` - clears the command window
 
 * `clear all` - clears variables, but it also clears a lot of other things from memory, such as breakpoints, persistent variables and cached memory - as your new to Matlab this is probably a bit unclear.
