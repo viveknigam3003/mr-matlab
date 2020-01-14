@@ -1,24 +1,24 @@
 ## Commands
-1. __clc__ - clears the command window
+1. `clc` - clears the command window
 
-2. __clear all__ - clears variables, but it also clears a lot of other things from memory, such as breakpoints, persistent variables and cached memory - as your new to Matlab this is probably a bit unclear.
+2. `clear all` - clears variables, but it also clears a lot of other things from memory, such as breakpoints, persistent variables and cached memory - as your new to Matlab this is probably a bit unclear.
 
 In short: You rarely need to use clear all - most of the time a simple clear will be enough.
 
-3. __ginput__ - enables you to select points from the figure using the mouse for cursor positioning. The figure must have focus before ginput receives input.
+3. `ginput` - enables you to select points from the figure using the mouse for cursor positioning. The figure must have focus before ginput receives input.
 
 [x,y] = ginput(n) enables you to select n points from the current axes and returns the x- and y-coordinates in the column vectors x and y, respectively. Press the Return key to terminate the input before entering n points.
 
 [x,y] = ginput gathers an unlimited number of points until you press the Return key.
 
-4. __x = input(prompt)__ displays the text in prompt and waits for the user to input a value and press the Return key.
+4. `x = input(prompt)` displays the text in prompt and waits for the user to input a value and press the Return key.
 
 ```MATLAB
 prompt = 'What is the original value? ';
 x = input(prompt)
 y = x*10
 ```
-5. __disp(X)__ - displays the value of variable X without printing the variable name. Another way to display a variable is to type its name, which displays a leading “X =” before the value.
+5. `disp(X)` - displays the value of variable X without printing the variable name. Another way to display a variable is to type its name, which displays a leading “X =” before the value.
 
 ```MATLAB
 A = [15 150];
@@ -29,4 +29,41 @@ To display Matrix with column names
 ```MATLAB
 X = rand(5,3);
 disp('     Corn      Oats      Hay')
+```
+## Loops
+
+* __While Loop__
+```MATLAB
+while<expression>
+  <statements>
+end
+```
+Example:
+
+```MATLAB
+a =10;
+% while loop execution
+while(a <20)
+fprintf('value of a: %d\n',a);
+a =a +1;
+end
+```
+* __For Loop__
+```MATLAB
+for index = values
+  <program statements>
+        ...
+end
+```
+___values___ can be one of the following forms
+
+1. initval:endval - increments the index variable from init val to end val by 1, and repeats execution of program statements until index is greater than end val.
+2. Initval:step:endval - increments index by the value step on each iteration, or decrements when step is negative.
+3. valArray - creates a column vector index from subsequent columns of array valArray on each iteration. For example, on the first iteration, index = valArray(:,1). The loop executes for a maximum of n times, where n is the number of columns of valArray, given by numel(valArray, 1, :). The input valArray can be of any MATLAB data type, including a string, cell array, or struct.
+
+Example:
+```MATLAB
+for a = 10:20
+fprintf('value of a: %d\n',a);
+end
 ```
