@@ -32,6 +32,11 @@ To display Matrix with column names
 X = rand(5,3);
 disp('     Corn      Oats      Hay')
 ```
+* `fprintf('Sample Statement %d\n',value);` -  is used to print values. Similar to `printf()` in C.
+Example:
+```MATLAB
+fprintf('value of nCm: %d\n',ncm);
+```
 
 ## Math Commands
 * `f = factorial(n)` returns the product of all positive integers less than or equal to n, where n is a nonnegative integer value.
