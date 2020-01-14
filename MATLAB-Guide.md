@@ -1,3 +1,5 @@
+# MATLAB Guide
+
 ## Commands
 * `clc` - clears the command window
 
