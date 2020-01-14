@@ -40,6 +40,7 @@ fprintf('value of nCm: %d\n',ncm);
 
 ## Math Commands
 * `f = factorial(n)` returns the product of all positive integers less than or equal to n, where n is a nonnegative integer value.
+* `abs(z)` returns the absolute value (or complex modulus) of z.
 
 ## If-Else
 The elseif and else blocks are optional. The statements execute only if previous expressions in the if...end block are false. An if block can include multiple elseif blocks. <br>
