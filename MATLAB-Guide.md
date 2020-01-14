@@ -67,3 +67,24 @@ for a = 10:20
 fprintf('value of a: %d\n',a);
 end
 ```
+* __Nested Loops__
+MATLAB allows nested loops in following fashion:
+
+Nested FOR
+```MATLAB
+for m =1:j
+  for n =1:k
+    <statements>;
+  end
+end
+```
+
+Nested WHILE
+```MATLAB
+while <expression1>
+  while <expression2>
+    <statements>
+  end
+end
+```
+
