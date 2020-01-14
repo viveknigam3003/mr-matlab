@@ -30,6 +30,10 @@ To display Matrix with column names
 X = rand(5,3);
 disp('     Corn      Oats      Hay')
 ```
+
+## Math Commands
+* `f = factorial(n)` returns the product of all positive integers less than or equal to n, where n is a nonnegative integer value.
+
 ## Loops
 
 * __While Loop__
