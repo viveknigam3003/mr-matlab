@@ -43,6 +43,17 @@ fprintf('value of nCm: %d\n',ncm);
 * `abs(z)` returns the absolute value (or complex modulus) of z.
 * `Y = exp(X)` returns the exponential ex for each element in array X.
 
+### Limits
+* `limit(f,var,a)` returns the Bidirectional Limit of the symbolic expression f when var approaches a.
+* `limit(f,a)` uses the default variable found by symvar.
+* `limit(f)` returns the limit at 0.
+* `limit(f,var,a,'left')` returns the Left Side Limit of f as var approaches a.
+* `limit(f,var,a,'right')` returns the Right Side Limit of f as var approaches a.
+
+### Advanced Functions
+* `F = symsum(f,k,a,b)` returns the sum of the series f with respect to the summation index k from the lower bound a to the upper bound b. _Note: If you do not specify k, symsum uses the variable determined by symvar as the summation index. If f is a constant, then the default variable is x._
+
+
 ## If-Else
 The elseif and else blocks are optional. The statements execute only if previous expressions in the if...end block are false. An if block can include multiple elseif blocks. <br>
 
