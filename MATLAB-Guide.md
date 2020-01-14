@@ -41,6 +41,32 @@ fprintf('value of nCm: %d\n',ncm);
 ## Math Commands
 * `f = factorial(n)` returns the product of all positive integers less than or equal to n, where n is a nonnegative integer value.
 
+## If-Else
+The elseif and else blocks are optional. The statements execute only if previous expressions in the if...end block are false. An if block can include multiple elseif blocks. <br>
+
+An expression is true when its result is nonempty and contains only nonzero elements (logical or real numeric). Otherwise, the expression is false.
+
+Syntax:
+```MATLAB
+if expression
+    statements
+elseif expression
+    statements
+else
+    statements
+end
+```
+Example:
+```MATLAB
+if r == c
+    A(r,c) = 2;
+elseif abs(r-c) == 1
+    A(r,c) = -1;
+else
+    A(r,c) = 0;
+end
+```
+
 ## Loops
 
 * __While Loop__
