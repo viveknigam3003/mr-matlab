@@ -137,4 +137,23 @@ while <expression1>
   end
 end
 ```
+* __Functions__
 
+Declaration:
+
+```MATLAB
+function [y1,...,yN] = myFun(x1,...,xM)
+```
+This is a function named myFun that accepts inputs x1,...,xM and returns outputs y1,...,yN. 
+Example:
+
+```MATLAB
+function ave = average(x)
+    ave = sum(x(:))/numel(x); 
+end
+```
+Which can be called from command line 
+```MATLAB
+z = 1:99;
+ave = average(z)
+```
