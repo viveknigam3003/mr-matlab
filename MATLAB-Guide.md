@@ -111,6 +111,12 @@ grade = 'B';
       fprintf('Invalid grade\n' );
    end
 ```
+`case <case_expressions>` can take in Scalar input i.e. we can use integers, characters, strings, or even array of strings. See [Assignment1/Question10](https://github.com/viveknigam3003/mr-matlab/blob/master/Assignment-1/Question10.m) for example.
+```MATLAB
+switch (i{1})
+    case {'January', 'March', 'May', 'July', 'August', 'October', 'December'}
+        fprintf('%s - %d\n',i{1},31);
+```
 
 ## Loops
 
