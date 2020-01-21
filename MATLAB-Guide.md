@@ -79,6 +79,38 @@ else
     A(r,c) = 0;
 end
 ```
+## Switch-Case Construct
+The switch case construct can be used as follows:
+```MATLAB
+switch <switch_expression>
+   case <case_expression>
+      <statements>
+   case <case_expression>
+      <statements>
+      ...
+      ...
+   otherwise
+      <statements>
+end
+```
+Example:
+```MATLAB
+grade = 'B';
+   switch(grade)
+   case 'A' 
+      fprintf('Excellent!\n' );
+   case 'B' 
+      fprintf('Well done\n' );
+   case 'C' 
+      fprintf('Well done\n' );
+   case 'D'
+      fprintf('You passed\n' );
+   case 'F' 
+      fprintf('Better try again\n' );
+   otherwise
+      fprintf('Invalid grade\n' );
+   end
+```
 
 ## Loops
 
