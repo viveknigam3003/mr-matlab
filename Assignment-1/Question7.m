@@ -1,9 +1,14 @@
 fibonacci = [0 1];
 n=10;
+sum=0;
 for i = 1:n-2
     fibonacci = [fibonacci fibonacci(end)+fibonacci(end-1)];
 end
-disp(fibonacci)
+for i = 1:n
+    sum = sum + fibonacci(i);
+end
+disp(fibonacci);
+disp (sum);
 
 % function u = Question7(n)
 %     if (n == 1 || n==0)
