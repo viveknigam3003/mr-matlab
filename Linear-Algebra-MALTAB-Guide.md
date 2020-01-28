@@ -44,3 +44,21 @@ Executing above code will lead to the output
 * `x = j:k` creates a unit-spaced vector x with elements [j,j+1,j+2,...,j+m] where m = fix(k-j). If j and k are both integers, then this is simply [j,j+1,...,k].
 
   `x = j:i:k` creates a regularly-spaced vector x using i as the increment between elements.
+  
+## Slice, Shape, and Selection
+
+Common indexing expressions that contain a colon are:
+
+* `A(:,n)` is the nth column of matrix A.
+
+* `A(m,:)` is the mth row of matrix A.
+
+* `A(:,:,p)` is the pth page of three-dimensional array A.
+
+* `A(:)` reshapes all elements of A into a single column vector. This has no effect if A is already a column vector.
+
+* `A(:,:)` reshapes all elements of A into a two-dimensional matrix. This has no effect if A is already a matrix or vector.
+
+* `A(j:k)` uses the vector j:k to index into A and is therefore equivalent to the vector [A(j), A(j+1), ..., A(k)].
+
+* `A(:,j:k)` includes all subscripts in the first dimension but uses the vector j:k to index in the second dimension. This returns a matrix with columns [A(:,j), A(:,j+1), ..., A(:,k)].
