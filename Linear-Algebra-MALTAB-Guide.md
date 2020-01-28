@@ -31,6 +31,7 @@ Executing above code will lead to the output
      6
     11
 ```
+## Generating Vector Spaces
 
 * `y = linspace(x1,x2)` returns a row vector of 100 evenly spaced points between x1 and x2.
 
@@ -39,3 +40,7 @@ Executing above code will lead to the output
 * `y = logspace(a,b)` generates a row vector y of 50 logarithmically spaced points between decades 10^a and 10^b. The logspace function is especially useful for creating frequency vectors. The function is the logarithmic equivalent of linspace and the ‘:’ operator.
 
   `y = logspace(a,b,n)` generates n points between decades 10^a and 10^b.
+
+* `x = j:k` creates a unit-spaced vector x with elements [j,j+1,j+2,...,j+m] where m = fix(k-j). If j and k are both integers, then this is simply [j,j+1,...,k].
+
+  `x = j:i:k` creates a regularly-spaced vector x using i as the increment between elements.
