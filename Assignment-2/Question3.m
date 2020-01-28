@@ -19,9 +19,10 @@ disp (C);
 
 %%
 clc
-D1 = rand(2); %random 2x2 Matrix
-disp (D1);
-
-%%
-clc
-D1(2,3);
+D = rand(8); %random 2x2 Matrix
+disp (D);
+disp(D(:,3));
+disp(D(2,:));
+disp(D(2,3));
+D(3:6,3:6)=zeros(4,4);
+disp(D);
