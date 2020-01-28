@@ -11,8 +11,6 @@ if n>100000
         fprintf('Sum = %d\n',sum);
     end
 else
-    for i=1:n
-        sum = sum + power(a,i);
-    end
+    sum = power(a,n)
     fprintf('Sum of Series = %d\n', sum);
 end
