@@ -1,0 +1,26 @@
+clc
+clear all
+%%
+n = input('Enter n: ');
+v1 = zeros(n,1)-2;
+v2 = zeros(n-1,1)+1;
+v3 = zeros(1,1)+1;
+D1 = diag(v1);
+D2 = diag(v2,1);
+D3 = diag(v2,-1);
+D4 = diag(v3, n-1);
+D5 = diag(v3, 1-n);
+D = D1+D2+D3+D4+D5;
+disp(D);
+%%
+a = [-2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1];
+D = toeplitz(a);
+disp(D);
+%%
+
+N = ones(8,8);
+a = [1 2 3 4 5 6 7 8];
+D = toeplitz(a);
+[N,D] = rat(X);
+format rat
+disp(X);
