@@ -1,3 +1,5 @@
+% Question 4
+format 
 clc;
 clear all;
 A = rand(8);

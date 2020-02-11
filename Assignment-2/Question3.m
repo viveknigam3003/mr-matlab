@@ -1,5 +1,6 @@
-clear all;
+% Question 3
 
+clear all;
 %%
 clc
 A1 = ones(6,4); %populate with ones A1 = 6x4

@@ -1,3 +1,5 @@
+% Question 5
+
 n = input('Enter value of n:');
 M = magic(n);
 rsum = M(1,:);

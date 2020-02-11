@@ -1,5 +1,5 @@
+% Question 2
 clear all;
-
 %%
 clc;
 L1 = linspace(1, 20);
