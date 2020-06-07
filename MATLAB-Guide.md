@@ -175,7 +175,7 @@ while <expression1>
   end
 end
 ```
-* __Functions__
+## Functions
 
 Declaration:
 
@@ -195,3 +195,28 @@ Which can be called from command line
 z = 1:99;
 ave = average(z)
 ```
+
+## Evaluating Polynomials
+
+* `feval`: `[y1,...,yN] = feval(fun,x1,...,xM)` evaluates a function using its name or its handle, and using the input arguments `x1,...,xM`.
+
+```
+fun = 'round';
+x1 = pi;
+y = feval(fun,x1)
+```
+
+This gives `y = 3`
+
+* `polyval`: `y = polyval(p,x)` evaluates the polynomial p at each point in x. Takes in two arrays `x` and `p`.
+
+* `roots(p)`:  Outputs an array of roots.
+
+* `vpasolve(eqn,var)` numerically solves the equation eqn for the variable var. 
+
+* `coeffs(p,var)` returns coefficients of the polynomial `p` with respect to the variable `var`.
+
+* `x = fzero(fun,x0)` tries to find a point `x` where `fun(x) = 0`. 
+
+* `subs(s,old,new)` returns a copy of `s`, replacing all occurrences of old with new, and then evaluates `s`.
+
